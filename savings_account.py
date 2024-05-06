@@ -17,10 +17,10 @@ def create_savings_account(balance, interest_rate, months):
     """
     # Create an instance of the `Account` class and pass in the balance and interest parameters.
     #  Hint: You need to add the interest as a value, i.e, 0.
-    my_account = Account(balance, (float(interest_rate)))
+    my_account = Account(float(balance), float(0))
 
     # Calculate interest earned
-    interest_earned = balance * (interest_rate / 100 * months / 12)
+    interest_earned = balance * (interest_rate / 100 * (int(months)) / 12)
     #print (interest_earned)
 
     # Update the savings account balance by adding the interest earned
